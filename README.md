@@ -2,7 +2,7 @@
 
 <h1 align="center">Hi 👋, I'm Frances</h1>
 <h3 align="center">A CS student👩‍💻</h3>
-(img align="right" alt="Coding" width="400" src="https://opendoodles.s3-us-west-1.amazonaws.com/petting.png")
+(img align="right" alt="Coding" width="400" src="[https://opendoodles.s3-us-west-1.amazonaws.com/petting.png](https://opendoodles.s3-us-west-1.amazonaws.com/petting.png)")
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=franceszh&label=Profile%20views&color=0e75b6&style=flat" alt="franceszh" /> </p>
 
