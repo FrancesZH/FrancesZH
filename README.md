@@ -1,4 +1,4 @@
-[![MasterHead]([https://1.bp.blogspot.com/-7A4WynwLsM...](https://opendoodles.s3-us-west-1.amazonaws.com/sprinting.gif))]
+[![MasterHead](https://opendoodles.s3-us-west-1.amazonaws.com/sprinting.gif)]
 
 <h1 align="center">Hi 👋, I'm Frances</h1>
 <h3 align="center">A CS student👩‍💻</h3>
