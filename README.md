@@ -1,16 +1,30 @@
 ### Hi there 👋
 
-<!--
-**FrancesZH/FrancesZH** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+const thisYear = new Date().getFullYear()
+const startTimeOfThisYear = new Date(`${thisYear}-01-01T00:00:00+00:00`).getTime()
+const endTimeOfThisYear = new Date(`${thisYear}-12-31T23:59:59+00:00`).getTime()
+const progressOfThisYear = (Date.now() - startTimeOfThisYear) / (endTimeOfThisYear - startTimeOfThisYear)
+const progressBarOfThisYear = generateProgressBar()
 
-Here are some ideas to get you started:
+function generateProgressBar() {
+    const progressBarCapacity = 30
+    const passedProgressBarIndex = parseInt(progressOfThisYear * progressBarCapacity)
+    const progressBar =
+      '█'.repeat(passedProgressBarIndex) +
+      '▁'.repeat(progressBarCapacity - passedProgressBarIndex)
+    return `{ ${progressBar} }`
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+const readme = `\
+### Hi there 👋
+
+⏳ Year progress ${progressBarOfThisYear} ${(progressOfThisYear * 100).toFixed(2)} %
+
+---
+
+⏰ Updated on ${new Date().toUTCString()}
+
+![Progress Bar CI](https://github.com/liununu/liununu/workflows/Progress%20Bar%20CI/badge.svg)\
+`
+
+console.log(readme)
